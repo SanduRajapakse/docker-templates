@@ -27,7 +27,8 @@
       <Value>production</Value>
     </Variable>
     <Variable>
-      <Name>APP_DEBUG=0</Value>
+      <Name>APP_DEBUG</Name>
+      <Value>0</Value>
     </Variable>
     <Variable>
       <Name>APP_URL</Name>
