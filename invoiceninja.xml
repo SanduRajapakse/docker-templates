@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL>https://git.iostore.xyz/SanduRajapakse/docker-templates</TemplateURL>
+  <TemplateURL>https://git.iostore.xyz/SanduRajapakse/docker-templates/blob/master/invoiceninja.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Accounting: Invoicing</Category>
   <Date>2019-08-14</Date>
