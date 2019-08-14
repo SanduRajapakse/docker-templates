@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://git.iostore.xyz/SanduRajapakse/docker-templates</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Accounting: Invoicing</Category>
+  <Date>2019-08-14</Date>
+  <Name>Invoice Ninja</Name>
+  <Support>https://git.iostore.xyz/SanduRajapakse/docker-templates/issues</Support>
+  <Description>Free, Open-Source Invoicing, Expenses and time-tracking built with Laravel</Description>
+  <Project>https://www.invoiceninja.org/</Project>
+  <Overview>Free, Open-Source Invoicing, Expenses and time-tracking built with Laravel</Overview>
+  <Registry>https://hub.docker.com/r/invoiceninja/invoiceninja/</Registry>
+  <Repository>invoiceninja/invoiceninja</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Name>APP_ENV</Name>
+      <Value>production</Value>
+    </Variable>
+    <Variable>
+      <Name>APP_DEBUG=0</Value>
+    </Variable>
+    <Variable>
+      <Name>APP_URL</Name>
+      <Value>http://ninja.dev</Value>
+    </Variable>
+    <Variable>
+      <Name>APP_KEY</Name>
+      <Value>SomeRandomStringSomeRandomString</Value>
+    </Variable>
+    <Variable>
+      <Name>APP_CIPHER</Name>
+      <Value>AES-256-CBC</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_TYPE</Name>
+      <Value>mysql</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_STRICT</Name>
+      <Value>false</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_HOST</Name>
+      <Value>localhost</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_DATABASE</Name>
+      <Value>ninja</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_USERNAME</Name>
+      <Value>ninja</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_PASSWORD</Name>
+      <Value>ninja</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8999</HostPort>
+        <ContainerPort>8999</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/var/www/app/public/logo</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/dev/rtc</HostDir>
+      <ContainerDir>/var/www/app/storage</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Version>85468754</Version>
+  <WebUI>http://[IP]:[PORT:8999]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+<BaseImage>php</BaseImage>
+</Container>
